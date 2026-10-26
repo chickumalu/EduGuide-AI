@@ -3,10 +3,20 @@ import streamlit as st
 
 st.set_page_config(page_title="EduGuide AI")
 
+
 st.markdown("""
 <style>
-.stApp { background-color: #f7f7f7; }
-.block-container { max-width: 760px; padding-top: 55px; }
+.stApp {
+    background-color: #f7f7f7;
+    color: #262730;
+}
+.block-container {
+    max-width: 760px;
+    padding-top: 55px;
+}
+h1, h2, h3, p, label, .stMarkdown, .stText {
+    color: #262730 !important;
+}
 .job {
     background: white;
     padding: 20px;
@@ -14,9 +24,12 @@ st.markdown("""
     margin-bottom: 15px;
     box-shadow: 0 2px 8px #dddddd;
 }
-.job h3 { color: #527a96; }
+.job h3 {
+    color: #527a96 !important;
+}
 </style>
 """, unsafe_allow_html=True)
+
 
 st.title("🎓 EduGuide AI")
 st.write("Type your interests or courses, and the app will recommend jobs for you!")
